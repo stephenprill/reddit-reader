@@ -15,10 +15,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
           'default-src': "'none'",
           'script-src': "'self' 'unsafe-eval'",
-          'font-src': "'self'",
-          'connect-src': "'self' localhost:3000 ws://localhost:35729 ws://0.0.0.0:35729 http://www.reddit.com/r/emberjs.json http://www.reddit.com/r/funny.json http://www.reddit.com/r/leagueoflegends.json",
+          'font-src': "'self' fonts.gstatic.com",
+          'connect-src': "'self' localhost:3000 ws://localhost:35729 ws://0.0.0.0:35729 http://www.reddit.com/r/emberjs.json http://www.reddit.com/r/funny.json http://www.reddit.com/r/leagueoflegends.json http://www.reddit.com/r/rubyonrails.json http://www.reddit.com/r/javascript.json",
           'img-src': "'self'",
-          'style-src': "'self'",
+          'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
           'media-src': "'self'"
         },
     APP: {

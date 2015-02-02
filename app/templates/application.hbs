@@ -1,7 +1,15 @@
-<h2 id='title'>Welcome to Ember.jz</h2>
-<nav>
-  {{#link-to 'posts' 'emberjs'}}Ember{{/link-to}}
-  {{#link-to 'posts' 'funny'}}Funny{{/link-to}}
-</nav>
+<h2 class='title'>Get Your Reddit Read On</h2>
+<div class="container">
 
+<img src="http://localhost:4200/public/assets/images/reddit_logo.png" alt="y-u-no">
+
+
+  <nav>
+    {{#link-to 'posts' 'emberjs'}}Ember{{/link-to}}
+    {{#link-to 'posts' 'javascript'}}JavaScript{{/link-to}}
+    {{#link-to 'posts' 'rubyonrails'}}RubyonRails{{/link-to}}
+    {{#link-to 'posts' 'funny'}}Funny{{/link-to}}
+    {{#link-to 'posts' 'leagueoflegends'}}League of Legends{{/link-to}}
+  </nav>
+</div>
 {{outlet}}
