@@ -1,0 +1,11 @@
+
+{{#each post in data.children}}
+
+
+<h2>
+<a target="_blank" {{bind-attr href='post.data.url'}}>{{post.data.title}}</a>
+</h2>
+{{/each}}
+<!-- <section class="post"> -->
+  {{outlet}}
+<!-- </section> -->

@@ -12,7 +12,15 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    contentSecurityPolicy: {
+          'default-src': "'none'",
+          'script-src': "'self' 'unsafe-eval'",
+          'font-src': "'self'",
+          'connect-src': "'self' localhost:3000 ws://localhost:35729 ws://0.0.0.0:35729 http://www.reddit.com/r/emberjs.json http://www.reddit.com/r/funny.json http://www.reddit.com/r/leagueoflegends.json",
+          'img-src': "'self'",
+          'style-src': "'self'",
+          'media-src': "'self'"
+        },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
