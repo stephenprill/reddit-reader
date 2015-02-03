@@ -1,8 +1,8 @@
 <div class="container">
   {{#each post in data.children}}
-  <h3>
-  <a target="_blank" {{bind-attr href='post.data.url'}}>{{post.data.title}}</a>
-  </h3>
+  <h4>
+    <a target="_blank" {{bind-attr href='post.data.url'}}>{{post.data.title}}</a>
+  </h4>
   {{/each}}
 </div>
 <section class="post">
